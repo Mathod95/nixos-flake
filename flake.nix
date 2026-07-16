@@ -10,7 +10,7 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixos-wsl, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, nixos-wsl, ... }: {
     nixosConfigurations = {
       wsl = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
