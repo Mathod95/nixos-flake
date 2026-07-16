@@ -22,7 +22,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
-            #home-manager.users.mathod = ./modules/default.nix;
+            home-manager.users.mathod = ./modules/home.nix;
             system.stateVersion = "26.05";
             wsl.enable = true;
           }
