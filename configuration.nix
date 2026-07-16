@@ -23,6 +23,7 @@
     vim
     git
     bat
+    fastfetch
   ];
 
   # This value determines the NixOS release from which the default
