@@ -10,6 +10,7 @@
 
   home.username = "mathod";
   home.homeDirectory = "/home/mathod";
+  home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
     vim
