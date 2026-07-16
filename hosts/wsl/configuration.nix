@@ -8,16 +8,21 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports =
+    [ # Include the results of the hardware scan.
+      ../core.nix
+    ];
+
   networking.hostName = "wsl";
 
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  wsl.defaultUser = "mathod";
 
   # Enable experimental features
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  #nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  #nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     vim
@@ -34,5 +39,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "26.05"; # Did you read the comment?
+  #system.stateVersion = "26.05"; # Did you read the comment?
 }
