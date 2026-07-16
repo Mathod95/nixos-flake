@@ -16,7 +16,7 @@
         system = "x86_64-linux";
         modules = [
           nixos-wsl.nixosModules.default
-	        ./configuration.nix
+	        ./hosts/wsl/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

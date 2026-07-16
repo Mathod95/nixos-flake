@@ -24,6 +24,8 @@
     git
     bat
     fastfetch
+    btop
+    zellij
   ];
 
   # This value determines the NixOS release from which the default
