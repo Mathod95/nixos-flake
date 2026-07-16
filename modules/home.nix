@@ -1,12 +1,12 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./home/fastfetch/fastfetch.nix
-    ./home/zellij/zellij.nix
-    ./home/zsh/zsh.nix
-    ./packages/packages.nix
-  ];
+  #imports = [
+  #  ./home/fastfetch/fastfetch.nix
+  #  ./home/zellij/zellij.nix
+  #  ./home/zsh/zsh.nix
+  #  ./packages/packages.nix
+  #];
 
   home.username = "mathod";
   home.homeDirectory = "/home/mathod";
