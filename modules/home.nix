@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./modules/fastfetch/fastfetch.nix
+    ./fastfetch/fastfetch.nix
   #  ./home/zellij/zellij.nix
   #  ./home/zsh/zsh.nix
   #  ./packages/packages.nix
