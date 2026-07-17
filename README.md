@@ -1,0 +1,1 @@
+[HomeManager](https://nix-community.github.io/home-manager/)

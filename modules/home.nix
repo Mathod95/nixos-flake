@@ -2,7 +2,7 @@
 
 {
   #imports = [
-  #  ./home/fastfetch/fastfetch.nix
+    ./modules/fastfetch/fastfetch.nix
   #  ./home/zellij/zellij.nix
   #  ./home/zsh/zsh.nix
   #  ./packages/packages.nix
@@ -16,7 +16,6 @@
     vim
     git
     bat
-    fastfetch
     btop
     zellij
   ];
