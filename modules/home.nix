@@ -4,8 +4,9 @@
   imports = [
     ./fastfetch/fastfetch.nix
     ./git/git.nix
-  #  ./home/zellij/zellij.nix
-  #  ./home/zsh/zsh.nix
+    ./just/just.nix
+  #  ./zellij/zellij.nix
+  #  ./zsh/zsh.nix
   #  ./packages/packages.nix
   ];
 

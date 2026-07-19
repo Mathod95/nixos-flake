@@ -1,0 +1,21 @@
+# Recette par défaut : liste toutes les recettes disponibles
+default:
+    @just --list
+
+# Nettoie les caches Nix (garbage collect + optimisation du store)
+nix-gc:
+    nix-collect-garbage -d
+    nix-store --optimise
+
+# Rebuild rapide de la config NixOS depuis le repo GitHub
+nixos-rebuild:
+    sudo nixos-rebuild switch --flake github:Mathod95/nixos --refresh
+
+# Met à jour les flakes du repo nixos et fait le rebuild dans la foulée
+nixos-update:
+    nix flake update --flake github:Mathod95/nixos
+    just nixos-rebuild
+
+# Git Pull
+gp:
+    git pull
