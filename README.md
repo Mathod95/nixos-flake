@@ -29,3 +29,6 @@
 
 [HomeManager](https://nix-community.github.io/home-manager/)
 [module/options](https://mynixos.com/home-manager/options/programs)
+
+Todo:
+    [ ] Fix just

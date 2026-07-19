@@ -4,7 +4,7 @@
   imports = [
     ./fastfetch/fastfetch.nix
     ./git/git.nix
-    ./just/just.nix
+  #  ./just/just.nix # Need to fix the justfile path in this module before enabling it
   #  ./zellij/zellij.nix
   #  ./zsh/zsh.nix
   #  ./packages/packages.nix
